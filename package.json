@@ -1,0 +1,15 @@
+{
+  "name": "gui",
+  "version": "1.0.0",
+  "description": "Powershell Live Response Artifacts Collector ver. 1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Adam Filipczyk",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^9.0.0",
+    "gitignore": "^0.6.0"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- reference: https://www.w3schools.com/howto/howto_js_collapsible.asp-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #3C3B37;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-bottom-style: solid;
+}
+
+.active, .collapsible:hover {
+  background-color:#5F5E58;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color:#ffffff;
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsible">Network Artifacts</button>
+<div class="content"><br>
+    <form action="/action_page.php">
+      <input type="checkbox" id="networkTraffic" name="networkTraffic" value="TCP Connections">
+      <label for="networkTraffic"><b>TCP Connections</b></label>
+      <p>The Get-NetTCPConnection cmdlet gets current TCP connections. Use this cmdlet to view TCP connection properties such as local or remote IP address, local or remote port, and connection state.</p>
+      <input type="checkbox" id="dnsCache" name="dnsCache" value="DNS Cache">
+      <label for="dnsCache"> <b>DNS Cache</b></label><br>
+      <p>The Get-DnsClientCache cmdlet retrieves the contents of the local DNS client cache.</p>
+      <input type="checkbox" id="getNeighbour" name="getNeighbour" value="Gets neighbor cache entries">
+      <label for="dnsCache"> <b>Gets Neighbor Cache Entries</b></label><br>
+      <p>The Get-NetNeighbor cmdlet gets neighbor cache entries. The cmdlet returns information about IP addresses and link-layer addresses for the neighbor cache entries.The neighbor cache maintains information for each on-link neighbor, including the IP address and the associated link-layer address. In IPv4, the neighbor cache is commonly known as the Address Resolution Protocol (ARP) cache.</p>
+    </form>
+</div>
+<button type="button" class="collapsible">Disk Artifacts</button>
+<div class="content"><br>
+  <form action="/action_page.php">
+    <input type="checkbox" id="installedPrograms" name="installedPrograms" value="Installed Programs">
+    <label for="networkTraffic"><b>Installed Programs </b></label>
+    <p>The Win32_Product WMI class represents products as they are installed by Windows Installer. A product generally correlates to one installation package.</p>
+    <input type="checkbox" id="artifact2" name="artifact2" value="Artifact 2">
+    <label for="artifact2"> <b>Artifact 2</b></label><br>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <input type="checkbox" id="artifact3" name="artifact3" value="Artifact 3">
+    <label for="Artifact 3"> <b>Artifact 3</b></label><br>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  </form>
+</div>
+<button type="button" class="collapsible">Processes / Services</button>
+<div class="content"><br>
+  <form action="/action_page.php">
+    <input type="checkbox" id="processesList" name="processesList" value="Process List">
+    <label for="processesList"><b>Process List</b></label>
+    <p>The Get-Process cmdlet gets the processes on a local computer. Without parameters, this cmdlet gets all of the processes on the local computer. You can also specify a particular process by process name or process ID (PID) or pass a process object through the pipeline to this cmdlet. By default, this cmdlet returns a process object that has detailed information about the process and supports methods that let you start and stop the process. You can also use the parameters of the Get-Process cmdlet to get file version information for the program that runs in the process and to get the modules that the process loaded.</p>
+    <input type="checkbox" id="getService" name="getService" value="Get Services">
+    <label for="getService"> <b>Get Services</b></label><br>
+    <p>The Get-Service cmdlet gets objects that represent the services on a computer, including running and stopped services. By defaul when Get-Service is run without parameters, all the local computer's services are returned. You can direct this cmdlet to get only particular services by specifying the service name or the display name of the services, or you can pipe service objects to this cmdlet.</p>
+    <input type="checkbox" id="getSchedukedTasks" name="getSchedukedTasks" value="Scheduled Tasks">
+    <label for="getSchedukedTasks"> <b>Scheduled Tasks</b></label><br>
+    <p>The Get-ScheduledTask cmdlet gets the task definition object of a scheduled task that is registered on a computer.</p>
+  </form>
+</div>
+<button type="button" class="collapsible">Users / Groups</button>
+<div class="content"><br>
+  <form action="/action_page.php">
+    <input type="checkbox" id="localGroups" name="Local Groups" value="Local Groups">
+    <label for="networkTraffic"><b>Local Groups</b></label>
+    <p>The Get-LocalGroup cmdlet gets local security groups in Security Account Manager. This cmdlet gets default built-in groups and local security groups that you create.</p>
+    <input type="checkbox" id="artifact2" name="artifact2" value="Artifact 2">
+    <label for="Artifact 2"> <b>Artifact 2</b></label><br>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <input type="checkbox" id="artifact3" name="artifact3" value="Artifact 3">
+    <label for="Artifact 3"> <b>Artifact 3</b></label><br>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  </form>
+</div>
+
+<p><input type="submit" value="Collect Data"></p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
