@@ -9,7 +9,7 @@
   "author": "Adam Filipczyk",
   "license": "MIT",
   "dependencies": {
-    "electron": "^9.0.0",
+    "electron": "^9.3.1",
     "gitignore": "^0.6.0"
   }
 }
